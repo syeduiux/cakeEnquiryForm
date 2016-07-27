@@ -18,6 +18,24 @@
   <meta name="description" content="This is description section which is important field for SEO. However the website you can enquire about the Cake Sizes and flavor.">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript">
+    function validate(){
+      if( document.myForm.Celebration.value == "" )
+      {
+        alert( "Please provide your Celebration type!" );
+        document.myForm.Email.focus() ;
+        return false;
+      }
+
+      if( document.myForm.Celebration.value == "Other" &&  document.myForm.otherInput.value == "" )
+      {
+        alert( "Please provide your other Celebration type!" );
+        document.myForm.otherInput.focus() ;
+        return false;
+      }
+      return( true );
+    }
+  </script>
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -28,7 +46,7 @@
 <!-- header ends -->
 <!-- main content starts -->
 <main>
-    <form action="" name="myForm" id="enquiryForm" class="container" onsubmit="return(validate());">
+  <form action="" name="myForm" id="enquiryForm" class="container" onsubmit="return(validate());">
     <fieldset>
       <legend>
         <h1>Cake Enquiry Form</h1>
