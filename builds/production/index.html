@@ -1,0 +1,85 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Cake Enquiry Form</title>
+  <meta name="description" content="This is description section which is important field for SEO. However the website you can enquire about the Cake Sizes and flavor.">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript">
+    function validate(){
+      if( document.myForm.Celebration.value == "" )
+      {
+        alert( "Please provide your Celebration type!" );
+        document.myForm.Email.focus() ;
+        return false;
+      }
+
+      if( document.myForm.Celebration.value == "Other" &&  document.myForm.otherInput.value == "" )
+      {
+        alert( "Please provide your other Celebration type!" );
+        document.myForm.otherInput.focus() ;
+        return false;
+      }
+      return( true );
+    }
+  </script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+<!-- header starts -->
+<!-- <header></header> -->
+<!-- header ends -->
+<!-- main content starts -->
+<main>
+  <form action="" name="myForm" id="enquiryForm" class="container" onsubmit="return(validate());">
+    <fieldset>
+      <legend>
+        <h1>Cake Enquiry Form</h1>
+      </legend>
+      <dl>
+        <dt><label for="Name">Name:</label></dt>
+        <dd><input type="text" tabindex="1" name="Name" required autofocus></dd>
+        <dt><label for="Email">Email:</label></dt>
+        <dd><input type="email" tabindex="2" name="Email" required></dd>
+        <dt>Type of cake:</dt>
+        <dd><label><input type="checkbox" tabindex="3" name="Cupcakes"> Cupcakes</label></dd>
+        <dd><label><input type="checkbox" tabindex="4" name="Cheesecakes"> Cheesecakes</label></dd>
+        <dd><label><input type="checkbox" tabindex="5" name="Buttercakes"> Buttercakes</label></dd>
+        <dd><label><input type="checkbox" tabindex="6" name="Mudcakes"> Mudcakes</label></dd>
+        <dt>Celebration type:</dt>
+        <dd><label><input type="radio" tabindex="7" name="Celebration" value="Birthday">Birthday</label></dd>
+        <dd><label><input type="radio" tabindex="8" name="Celebration" value="Wedding">Wedding</label></dd>
+        <dd><label><input type="radio" tabindex="9" name="Celebration" value="Corporate">Corporate</label></dd>
+        <dd><label><input type="radio" tabindex="10" name="Celebration" value="Other">Other</label></dd>
+        <dd><input type="text" tabindex="11" id="otherInput" name="otherInput"></dd>
+        <dt>Tell us about your dream cake:</dt>
+        <dd><textarea tabindex="12" name="dreamCake" id="dreamCake" cols="30" rows="5"></textarea></dd>
+        <dd>
+          <button type="submit" tabindex="13">Send away</button>
+          <button type="reset" id="restart" tabindex="14">Restart</button></dd>
+        </dl>
+      </fieldset>
+    </form>
+  </main>
+  <!-- main content ends -->
+  <!-- footer starts -->
+  <!-- <footer></footer> -->
+  <!-- footer ends -->
+  <script src="js/script.js"></script>
+</body>
+</html>
