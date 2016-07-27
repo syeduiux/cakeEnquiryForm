@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+
+//uses border box sizing like the old IE
+@include border-box-sizing;
+
+//Color Palate
+$white: rgba(#f7f7f7, 0.5);
+$darkBlue: #37454e;
+$blue: #69737c;
+
+//Font variables
+$fontfamily: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$light: 300;
+$normal: 400;
+$bold: 600;
+$heavy: 700;
+
+// body
+$bodyFont: $light 2rem $fontfamily;
+$bodyFontHead: $heavy 3.2rem $fontfamily;
+
+//Layout breakponts
+$narrow: 400px;
+$small: 650px;
+$medium: 960px;
+$wide: 1200px;
+
+//Layout variables
+$default-border-radius: 0.5rem;
