@@ -1,0 +1,52 @@
+#enquiryForm fieldset {
+  border: 0.2rem $blue solid;
+  padding: 5rem;
+  margin: 10rem 0;
+
+  @include border-radius;
+
+  legend {
+    padding: 0 1rem;
+    margin-left: -1rem;
+  }
+
+  dt {
+    font-weight: $bold;
+    padding: 1rem 0;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    color: $darkBlue;
+    width: 100%;
+    margin: 0 0 .5rem;
+    padding: 1rem;
+    border: 0.2rem solid lighten($blue, 10%);
+    background: $blue;
+
+    @include border-radius;
+  }
+
+  #otherInput {
+    margin-top: 1rem;
+  }
+
+  button {
+    font-weight: $bold;
+    color: $white;
+    border: 0.2rem $white solid;
+    background-color: $darkBlue;
+    padding: .75rem;
+    cursor: pointer;
+
+    @include border-radius;
+  }
+
+  #restart {
+    border: 0;
+    text-decoration: underline;
+    margin-left: 1rem;
+    font-weight: $light;
+  }
+}
