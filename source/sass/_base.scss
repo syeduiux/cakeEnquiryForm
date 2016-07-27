@@ -1,0 +1,27 @@
+html {
+  /*default font size is 16px for the browser means 1rem=16px but after making 62.5% it gonna be 1rem=10px*/
+  overflow-x: hidden !important;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: $darkBlue;
+  color: $white;
+  font: $bodyFont;
+
+  @include single-text-shadow;
+}
+
+#{headings()} {
+  font: $bodyFontHead;
+
+  @include single-text-shadow;
+}
+
+.container {
+  @include container(60%);
+}
+
+$susy: (columns: 12, container: 60em, gutters: 1 / 4, gutter-position: inside, debug: (image: hide, color: rgba(#66f, 0.25), output: background, toggle: top right));
