@@ -1,7 +1,7 @@
 {
-  "name": "ustwo-Enquiry-Form",
+  "name": "cake-Enquiry-Form",
   "version": "0.0.1",
-  "description": "The test is designed to be pretty quick for people who are familiar with a basic web technology stack.",
+  "description": "This form is designed to be pretty quick for people who are familiar with a basic web technology stack.",
   "author": "Syed Ahmed",
   "devDependencies": {
     "gulp": "^3.9.1",
@@ -18,6 +18,6 @@
 	"license": "Apache-2.0",
 	"repository": {
 	  "type": "git",
-	  "url": "https://github.com/fareed51/pepper.git"
+	  "url": "https://github.com/syeduiux/cakeEnquiryForm.git"
 	}
 }
